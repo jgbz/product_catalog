@@ -39,7 +39,7 @@ func (s *Server) Listen() {
 		}
 
 		// Get current page
-		// If it fails to parse the page default to zero.
+		// If it fails to parse the page default to 1.
 		page := 1
 		if pageParam := c.Query("page"); pageParam != "" {
 			v, err := strconv.Atoi(pageParam)

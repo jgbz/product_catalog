@@ -1,0 +1,8 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS campaign(
+    campaign_id SERIAL PRIMARY KEY,
+    name VARCHAR (50) NOT NULL
+);
+
+COMMIT;
